@@ -10,4 +10,6 @@ https://engaged-arcanum-438202-d9.uw.r.appspot.com/
 Video Demo below:
 
 
-![Emergency-web-app-demo - Made with Clipchamp_compressed](https://github.com/user-attachments/assets/1dfc4a9e-d370-4442-bc9a-c959183894db)
+
+https://github.com/user-attachments/assets/9e302b52-9a26-4b6c-bd6f-47090d592935
+
