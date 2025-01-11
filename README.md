@@ -10,6 +10,4 @@ https://engaged-arcanum-438202-d9.uw.r.appspot.com/
 Video Demo below:
 
 
-
-https://github.com/user-attachments/assets/9e302b52-9a26-4b6c-bd6f-47090d592935
-
+![Emergency-Web-App-ezgif com-optimize (2)](https://github.com/user-attachments/assets/6169dbee-025e-4f40-bbb9-90a5f9f927d1)
