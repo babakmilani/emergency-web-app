@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="profile-pic" title="add a profile picture">
+
+            <% if (imagePath) { %>
+                <img src="data:image/jpeg;base64,<%= imagePath %>" id="profile-image" alt="User Image"
+                    style="cursor: pointer; width: 75px; height: 90px;">
+                <% } else { %>
+                    <img src="/img/default-pic.png" id="profile-image" alt="Upload Image"
+                        style="cursor: pointer; width: 200px; height: 200px;">
+                    <% } %>
+                        <input type="file" id="image-upload" style="display: none;">
+        </div>
+
+        <form id="uploadForm" action="/profile/uploads" method="post" encType="multipart/form-data"
+            style="display: none;">
+            <input type="file" name="image" id="hidden-upload">
+        </form>
+
+        <h1>Welcome, <%= user.name %>!</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/report">Report</a>
+        <a href="/logs">Logs</a>
+        <a href="/profile">Account</a>
+        <a href="/logout">Logout</a>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if (results && results.length> 0) { %>
+                <% results.forEach((result, index)=> { %>
+                    <tr>
+                        <th scope="row">
+                            <%= index + 1 %>
+                        </th>
+                        <td>
+                            <%= result.firstName %>
+                        </td>
+                        <td>
+                            <%= result.lastName %>
+                        </td>
+                        <td>
+                            <%= result.userName %>
+                        </td>
+                        <td>
+                            <%= result.email %>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#changePasswordModal">
+                                Change Password
+                            </button>
+                        </td>
+                    </tr>
+                    <% }); %>
+                        <% } else if (results) { %>
+                            <tr>
+                                <td>
+                                    <%= results.firstName %>
+                                </td>
+                                <td>
+                                    <%= results.lastName %>
+                                </td>
+                                <td>
+                                    <%= results.userName %>
+                                </td>
+                                <td>
+                                    <%= results.email %>
+                                </td>
+                                <td>
+                                    <%= results.passWord %>
+                                </td>
+                            </tr>
+                            <% } else { %>
+                                <tr>
+                                    <td colspan="5">No data available in the database.</td>
+                                </tr>
+                                <% } %>
+
+        </tbody>
+    </table>
+    <!-- Modal -->
+    <div class="modal fade" id="changePasswordModal" tabindex="-1" aria-labelledby="changePasswordModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="changePasswordModalLabel">Change Password</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="/profile/passwordChange" method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="currentPassword">Current Password</label>
+                            <input type="password" name="currentPassword" id="currentPassword" class="form-control"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">New Password</label>
+                            <input type="password" name="newPassword" id="newPassword" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Update Password</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="footer-txt">Developed by Babak Milani for employment purposes. All rights reserved 2024.</p>
+    </div>
+
+    <!-- Add JavaScript to show the popup -->
+    <% if (successMessage.length> 0) { %>
+        <script>
+            alert("<%= successMessage[0] %>");
+        </script>
+        <% } %>
+
+            <script src="/javascript/dashboard.js"></script>
+            <script src="/javascript/flashMsg.js"></script>
+            <script src="/javascript/js.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>
