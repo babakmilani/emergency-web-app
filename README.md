@@ -5,7 +5,6 @@ emergencies such as, floods, wildfires, terrorism, etc. I purposely made this pr
 This web application can be scaled further by implementing other technologies to it. But this project showcases a great deal of understanding of web developement
 and cloud computing. The google cloud url for the web application is below. 
 
-https://engaged-arcanum-438202-d9.uw.r.appspot.com/
 
 Video Demo below:
 
