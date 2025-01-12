@@ -1,0 +1,25 @@
+2025-01-09 01:43:59.277 [info] Extension host with pid 1236 started
+2025-01-09 01:43:59.277 [error] Error: EEXIST: file already exists, open '/home/babakmilani1980/.codeoss/data/User/workspaceStorage/35a0365e/vscode.lock'
+2025-01-09 01:43:59.286 [info] Lock '/home/babakmilani1980/.codeoss/data/User/workspaceStorage/35a0365e/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-01-09 01:43:59.289 [info] Lock '/home/babakmilani1980/.codeoss/data/User/workspaceStorage/35a0365e/vscode.lock': The pid 1215 appears to be gone.
+2025-01-09 01:43:59.289 [info] Lock '/home/babakmilani1980/.codeoss/data/User/workspaceStorage/35a0365e/vscode.lock': Deleting a stale lock.
+2025-01-09 01:43:59.300 [info] Lock '/home/babakmilani1980/.codeoss/data/User/workspaceStorage/35a0365e/vscode.lock': Lock acquired.
+2025-01-09 01:43:59.440 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-01-09 01:43:59.441 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2025-01-09 01:44:00.237 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-01-09 01:44:00.259 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2025-01-09 01:44:00.399 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-01-09 01:44:00.400 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-01-09 01:44:01.139 [info] ExtensionService#_doActivateExtension redhat.fabric8-analytics, startup: true, activationEvent: 'workspaceContains:**/package.json,**/pom.xml,**/go.mod,**/requirements.txt,**/build.gradle,**/Dockerfile,**/Containerfile'
+2025-01-09 01:44:01.710 [info] Eager extensions activated
+2025-01-09 01:44:01.710 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-01-09 01:44:01.711 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onStartupFinished'
+2025-01-09 01:44:01.711 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2025-01-09 01:44:01.712 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-01-09 01:44:01.712 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-01-09 01:44:03.108 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-01-09 01:44:05.713 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-01-09 01:44:05.714 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-01-09 01:44:05.714 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-01-09 01:44:06.280 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-01-09 01:51:29.742 [info] ExtensionService#_doActivateExtension vscode.simple-browser, startup: false, activationEvent: 'onOpenExternalUri:https'

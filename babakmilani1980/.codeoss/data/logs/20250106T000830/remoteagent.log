@@ -1,0 +1,12 @@
+2025-01-06 00:08:30.219 [info] 
+
+
+
+
+2025-01-06 00:08:30.237 [info] Extension host agent started.
+2025-01-06 00:08:35.227 [info] [127.0.0.1][6270dcd4][ExtensionHostConnection] New connection established.
+2025-01-06 00:08:35.228 [info] [127.0.0.1][719ca016][ManagementConnection] New connection established.
+2025-01-06 00:08:36.297 [info] [127.0.0.1][6270dcd4][ExtensionHostConnection] <1236> Launched Extension Host Process.
+2025-01-06 00:08:40.109 [error] [File Watcher] Unexpected error: inotify_add_watch on '/home/babakmilani1980/.codeoss/data/logs/20250102T162617/exthost2/output_logging_20250102T170212' failed: No such file or directory (EUNKNOWN) (path: /home/babakmilani1980)
+2025-01-06 00:08:40.110 [error] [File Watcher (universal)] inotify_add_watch on '/home/babakmilani1980/.codeoss/data/logs/20250102T162617/exthost2/output_logging_20250102T170212' failed: No such file or directory
+2025-01-06 00:20:25.305 [info] [127.0.0.1][719ca016][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
