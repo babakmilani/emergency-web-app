@@ -1,10 +1,7 @@
 # emergency-web-app
-MEN (MySQL, ExpressJS, and NodeJS) Stack.
-This is a project I personally developed. I utilized the Google Maps API on Google Cloud. Users (Government Agencies) can register as users, and then report 
-emergencies such as, floods, wildfires, terrorism, etc. I purposely made this project to learn how to integrate the Google Maps API into a Web Application.
-This web application can be scaled further by implementing other technologies to it. But this project showcases a great deal of understanding of web developement
-and cloud computing. The google cloud url for the web application is below. 
 
+This was my University Final Project for the course Software Developement. I had to use AGILE on the cloud of my choosing. I chose Google cloud because
+I had to use Google Maps API. I chose to go with the MEN STACK (MySQL, ExpressJS, and NodeJS). I created a web application ith user registration and login for government agencies to report Emergencies that would instantly populate the map with information about the emergency. I added a search feature based on location and the type of emergency (wildfire, flood, terrorism, and etc). Another feature was a user dashboard that list their reports and also the ability to change their password. 
 
 Video Demo below:
 
